@@ -15,61 +15,82 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: `url(${heroBackground})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/80" />
         
-        <div className="relative z-10 text-center max-w-5xl mx-auto px-6">
-          <Badge variant="secondary" className="mb-6 bg-primary/10 text-primary border-primary/20 px-4 py-2">
-            <ShoppingBag className="w-4 h-4 mr-2" />
-            Shopify Expert Services
-          </Badge>
-          
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Transform Your{" "}
-            <span className="gradient-text">Shopify Store</span>{" "}
-            Into a Sales Machine
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Expert Shopify design, optimization, and consulting services that boost conversions, 
-            improve performance, and grow your business.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 transition-opacity px-8 py-4 text-lg"
-              onClick={scrollToServices}
-            >
-              View Services
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-4 text-lg"
-              asChild
-            >
-              <Link to="/success-stories">View Success Stories</Link>
-            </Button>
-          </div>
-          
-          <div className="flex items-center justify-center gap-8 text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                ))}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Content */}
+            <div className="space-y-8">
+              <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 px-4 py-2 w-fit">
+                <ShoppingBag className="w-4 h-4 mr-2" />
+                Shopify Expert Services
+              </Badge>
+              
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Transform Your{" "}
+                <span className="gradient-text">Shopify Store</span>{" "}
+                Into a Sales Machine
+              </h1>
+              
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+                Expert Shopify design, optimization, and consulting services that boost conversions, 
+                improve performance, and grow your business.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  size="lg" 
+                  className="bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 transition-opacity px-8 py-4 text-lg"
+                  onClick={scrollToServices}
+                >
+                  View Services
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-4 text-lg"
+                  asChild
+                >
+                  <Link to="/success-stories">View Success Stories</Link>
+                </Button>
               </div>
-              <span className="text-sm">5.0 Rating</span>
+              
+              <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <span className="text-sm">5.0 Rating</span>
+                </div>
+                <div className="h-4 w-px bg-border hidden sm:block" />
+                <div className="text-sm">50+ Stores Optimized</div>
+                <div className="h-4 w-px bg-border hidden sm:block" />
+                <div className="text-sm">180% Avg. Conversion Increase</div>
+              </div>
             </div>
-            <div className="h-4 w-px bg-border" />
-            <div className="text-sm">50+ Stores Optimized</div>
-            <div className="h-4 w-px bg-border" />
-            <div className="text-sm">180% Avg. Conversion Increase</div>
+
+            {/* Right side - Image */}
+            <div className="relative">
+              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={heroBackground} 
+                  alt="Shopify store optimization example"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary to-primary-glow rounded-full opacity-20 blur-xl" />
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-accent to-primary rounded-full opacity-15 blur-2xl" />
+            </div>
           </div>
         </div>
         

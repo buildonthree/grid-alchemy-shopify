@@ -4,6 +4,7 @@ import { SignupForm } from "@/components/SignupForm";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Star, ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Index = () => {
@@ -50,8 +51,9 @@ const Index = () => {
               variant="outline" 
               size="lg" 
               className="border-primary/30 text-primary hover:bg-primary/10 px-8 py-4 text-lg"
+              asChild
             >
-              Get Free Audit
+              <Link to="/success-stories">View Success Stories</Link>
             </Button>
           </div>
           

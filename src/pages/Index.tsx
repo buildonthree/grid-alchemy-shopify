@@ -1,4 +1,5 @@
 import { BentoGrid } from "@/components/BentoGrid";
+import { ModernSlideshow } from "@/components/ModernSlideshow";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Star, ArrowDown } from "lucide-react";
@@ -95,6 +96,26 @@ const Index = () => {
           </div>
           
           <BentoGrid />
+        </div>
+      </section>
+
+      {/* Case Studies Slideshow */}
+      <section className="py-20 px-6 bg-muted/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
+              Success Stories
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Real Results from{" "}
+              <span className="gradient-text">Real Projects</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              See how we've transformed businesses with our proven Shopify expertise and data-driven approach.
+            </p>
+          </div>
+          
+          <ModernSlideshow />
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 import { BentoGrid } from "@/components/BentoGrid";
 import { ModernSlideshow } from "@/components/ModernSlideshow";
+import { SignupForm } from "@/components/SignupForm";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Star, ArrowDown } from "lucide-react";
@@ -116,6 +117,13 @@ const Index = () => {
           </div>
           
           <ModernSlideshow />
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <SignupForm />
         </div>
       </section>
 

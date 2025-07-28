@@ -1,11 +1,14 @@
 import { BentoGrid } from "@/components/BentoGrid";
 import { ModernSlideshow } from "@/components/ModernSlideshow";
 import { SignupForm } from "@/components/SignupForm";
+import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ShoppingBag, Star, ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
+import beforeStore from "@/assets/before-store.jpg";
+import afterStore from "@/assets/after-store.jpg";
 
 const Index = () => {
   const scrollToServices = () => {
@@ -13,9 +16,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background snap-y snap-mandatory overflow-y-scroll">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden snap-start">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: `url(${heroBackground})` }}
@@ -102,8 +105,36 @@ const Index = () => {
         </button>
       </section>
 
+      {/* Before/After Showcase */}
+      <section className="py-20 px-6 snap-start">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
+              Transformation Showcase
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              See the{" "}
+              <span className="gradient-text">Dramatic Results</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Witness the transformation from outdated stores to conversion-optimized powerhouses.
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <BeforeAfterSlider 
+              beforeImage={beforeStore}
+              afterImage={afterStore}
+              beforeAlt="Outdated Shopify store design"
+              afterAlt="Modern, optimized Shopify store design"
+              className="animate-fade-in"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section id="services" className="py-20 px-6">
+      <section id="services" className="py-20 px-6 snap-start">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
@@ -124,7 +155,7 @@ const Index = () => {
       </section>
 
       {/* Case Studies Slideshow */}
-      <section className="py-20 px-6 bg-muted/20">
+      <section className="py-20 px-6 bg-muted/20 snap-start">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
@@ -144,7 +175,7 @@ const Index = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 snap-start">
         <div className="max-w-7xl mx-auto">
           <SignupForm />
         </div>

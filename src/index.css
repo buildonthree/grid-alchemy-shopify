@@ -154,6 +154,21 @@
   .transition-smooth {
     transition: var(--transition-smooth);
   }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar for snap sections */
+  .snap-y {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .snap-start {
+    scroll-snap-align: start;
+  }
 }
 
 @keyframes float {

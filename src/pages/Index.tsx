@@ -2,10 +2,13 @@ import { BentoGrid } from "@/components/BentoGrid";
 import { ModernSlideshow } from "@/components/ModernSlideshow";
 import { SignupForm } from "@/components/SignupForm";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
+import { FloatingIconsHero } from "@/components/floating-icons-hero-section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ShoppingBag, Star, ArrowDown } from "lucide-react";
+import { ShoppingBag, Star, ArrowDown, Facebook } from "lucide-react";
+import { MailchimpIcon, KlaviyoIcon, GoogleIcon, SpotifyIcon, YouTubeIcon, AppleIcon, MicrosoftIcon, FacebookIcon } from "@/components/custom-icons";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import heroBackground from "@/assets/hero-background.jpg";
 import beforeStore from "@/assets/before-store.jpg";
 import afterStore from "@/assets/after-store.jpg";
@@ -25,6 +28,11 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/80" />
         
+        {/* Theme Toggle */}
+        <div className="absolute top-6 right-6 z-20">
+          <ThemeToggle />
+        </div>
+        
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Content */}
@@ -35,14 +43,13 @@ const Index = () => {
               </Badge>
               
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                Transform Your{" "}
-                <span className="gradient-text">Shopify Store</span>{" "}
-                Into a Sales Machine
+                Built with Purpose{" "}
+                <span className="gradient-text">Designed to Perform</span>{" "}
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-                Expert Shopify design, optimization, and consulting services that boost conversions, 
-                improve performance, and grow your business.
+              Hi I’m Jacob — a Shopify expert who keeps it simple, clean, and intentional.
+              From design to performance, I help stores run smoother and convert better — without the agency noise.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -51,7 +58,7 @@ const Index = () => {
                   className="bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 transition-opacity px-8 py-4 text-lg"
                   onClick={scrollToServices}
                 >
-                  View Services
+                  See What I Do
                 </Button>
                 <Button 
                   variant="outline" 
@@ -104,6 +111,31 @@ const Index = () => {
           <ArrowDown className="w-6 h-6" />
         </button>
       </section>
+
+      {/* Third Party Services Section */}
+      <FloatingIconsHero
+        title="From Confused to Connected"
+        subtitle="Setting up integrations shouldn't slow down your growth. From pixels to automations — whether you want guidance on best practices or just want it done, I've got you covered."
+        ctaText="Let's Get You Plugged In"
+        ctaHref="#services"
+        badge={
+          <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 px-4 py-2 w-fit mx-auto">
+            <ShoppingBag className="w-4 h-4 mr-2" />
+            App Integration Services
+          </Badge>
+        }
+        icons={[
+          { id: 1, icon: MailchimpIcon, className: "top-20 left-10" },
+          { id: 2, icon: FacebookIcon, className: "top-32 right-20" },
+          { id: 3, icon: GoogleIcon, className: "top-48 left-1/4" },
+          { id: 4, icon: KlaviyoIcon, className: "top-64 right-1/3" },
+          { id: 5, icon: YouTubeIcon, className: "bottom-32 left-20" },
+          { id: 6, icon: SpotifyIcon, className: "bottom-48 right-1/4" },
+          { id: 7, icon: AppleIcon, className: "bottom-20 left-1/3" },
+          { id: 8, icon: MicrosoftIcon, className: "top-1/2 left-10" },
+        ]}
+      />
+
 
       {/* Before/After Showcase */}
       <section className="py-20 px-6 snap-start">

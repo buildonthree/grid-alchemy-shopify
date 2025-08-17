@@ -5,7 +5,9 @@ import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { FloatingIconsHero } from "@/components/floating-icons-hero-section";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ShoppingBag, Star, ArrowDown, Facebook } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Card, CardContent } from "@/components/ui/card";
+import { ShoppingBag, Star, ArrowDown, Facebook, CheckCircle, Users, Target, Zap, Award, Clock, Shield } from "lucide-react";
 import { MailchimpIcon, KlaviyoIcon, GoogleIcon, SpotifyIcon, YouTubeIcon, AppleIcon, MicrosoftIcon, FacebookIcon } from "@/components/custom-icons";
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -112,6 +114,179 @@ const Index = () => {
         </button>
       </section>
 
+      {/* Trust Indicators Section */}
+      <section className="py-20 px-6 bg-muted/20 snap-start">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
+              Trusted by Growing Brands
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Proven Track Record of{" "}
+              <span className="gradient-text">Success</span>
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <Card className="border-border/20 bg-background/50 backdrop-blur-sm">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-2xl font-bold text-primary mb-2">50+</div>
+                <p className="text-sm text-muted-foreground">Happy Clients</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border/20 bg-background/50 backdrop-blur-sm">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-2xl font-bold text-primary mb-2">180%</div>
+                <p className="text-sm text-muted-foreground">Avg Conversion Boost</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border/20 bg-background/50 backdrop-blur-sm">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <Zap className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-2xl font-bold text-primary mb-2">48hrs</div>
+                <p className="text-sm text-muted-foreground">Average Response Time</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="border-border/20 bg-background/50 backdrop-blur-sm">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-6 h-6 text-primary" />
+                </div>
+                <div className="text-2xl font-bold text-primary mb-2">5.0</div>
+                <p className="text-sm text-muted-foreground">Client Rating</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <p className="text-muted-foreground mb-8">Shopify Partner • Plus Certified • Performance Expert</p>
+            <div className="flex flex-wrap justify-center items-center gap-6 text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-primary" />
+                <span>Shopify Plus Partner</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-primary" />
+                <span>Theme Development Certified</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-primary" />
+                <span>3+ Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About/Process Section */}
+      <section className="py-20 px-6 snap-start">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
+                My Approach
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Simple Process,{" "}
+                <span className="gradient-text">Powerful Results</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                I believe great Shopify stores aren't built with complexity—they're built with intention. 
+                Every line of code, every design choice, and every optimization serves a purpose: converting visitors into customers.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-sm font-bold text-primary">1</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Discovery & Analysis</h3>
+                    <p className="text-muted-foreground">Deep dive into your current setup, goals, and challenges to create a tailored strategy.</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-sm font-bold text-primary">2</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Strategic Implementation</h3>
+                    <p className="text-muted-foreground">Clean, efficient execution focused on performance, user experience, and conversion optimization.</p>
+                  </div>
+                </div>
+                
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-sm font-bold text-primary">3</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Testing & Optimization</h3>
+                    <p className="text-muted-foreground">Data-driven refinements to ensure your store performs at its absolute best.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 border border-border/20">
+                <h3 className="text-xl font-bold mb-6">What Makes Me Different</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">No agency overhead—you work directly with me</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Focus on performance, not just pretty designs</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Transparent communication throughout the project</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Long-term partnership mindset</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 px-6 snap-start">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
+              Our Services
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Everything You Need to{" "}
+              <span className="gradient-text">Succeed on Shopify</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              From custom design to performance optimization, we provide comprehensive Shopify services 
+              that drive real results for your business.
+            </p>
+          </div>
+          
+          <BentoGrid />
+        </div>
+      </section>
+
       {/* Third Party Services Section */}
       <FloatingIconsHero
         title="From Confused to Connected"
@@ -165,26 +340,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-6 snap-start">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
-              Our Services
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Everything You Need to{" "}
-              <span className="gradient-text">Succeed on Shopify</span>
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              From custom design to performance optimization, we provide comprehensive Shopify services 
-              that drive real results for your business.
-            </p>
-          </div>
-          
-          <BentoGrid />
-        </div>
-      </section>
 
       {/* Case Studies Slideshow */}
       <section className="py-20 px-6 bg-muted/20 snap-start">
@@ -203,6 +358,80 @@ const Index = () => {
           </div>
           
           <ModernSlideshow />
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 px-6 bg-muted/20 snap-start">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
+              Frequently Asked Questions
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Got Questions?{" "}
+              <span className="gradient-text">I've Got Answers</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Clear answers to common questions about working together and my Shopify services.
+            </p>
+          </div>
+          
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="border border-border/20 rounded-lg px-6 bg-background/50">
+              <AccordionTrigger className="text-left hover:no-underline py-6">
+                <span className="font-semibold">How long does a typical Shopify project take?</span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6 text-muted-foreground">
+                Most projects are completed within 2-6 weeks, depending on complexity. Simple optimizations and fixes can be done within days, while custom theme development or major redesigns typically take 4-6 weeks. I always provide a clear timeline during our initial consultation.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-2" className="border border-border/20 rounded-lg px-6 bg-background/50">
+              <AccordionTrigger className="text-left hover:no-underline py-6">
+                <span className="font-semibold">Do you work with Shopify Plus stores?</span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6 text-muted-foreground">
+                Absolutely! I'm a certified Shopify Plus partner and have extensive experience with enterprise-level stores. Whether you need complex customizations, advanced integrations, or performance optimization at scale, I can help.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-3" className="border border-border/20 rounded-lg px-6 bg-background/50">
+              <AccordionTrigger className="text-left hover:no-underline py-6">
+                <span className="font-semibold">What's included in your ongoing support?</span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6 text-muted-foreground">
+                I offer flexible ongoing support packages that include bug fixes, minor updates, performance monitoring, and priority support. Think of me as your dedicated Shopify partner—available when you need help scaling or optimizing your store.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-4" className="border border-border/20 rounded-lg px-6 bg-background/50">
+              <AccordionTrigger className="text-left hover:no-underline py-6">
+                <span className="font-semibold">Can you help with app integrations and third-party tools?</span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6 text-muted-foreground">
+                Yes! I specialize in integrating marketing tools like Klaviyo, Google Analytics, Facebook Pixel, and many others. I focus on clean implementations that don't slow down your site while ensuring accurate data tracking and seamless functionality.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-5" className="border border-border/20 rounded-lg px-6 bg-background/50">
+              <AccordionTrigger className="text-left hover:no-underline py-6">
+                <span className="font-semibold">How do you approach mobile optimization?</span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6 text-muted-foreground">
+                Mobile-first is my standard approach. With over 60% of e-commerce traffic coming from mobile devices, I ensure your store looks and performs flawlessly on all screen sizes. This includes optimized images, touch-friendly interfaces, and lightning-fast load times.
+              </AccordionContent>
+            </AccordionItem>
+            
+            <AccordionItem value="item-6" className="border border-border/20 rounded-lg px-6 bg-background/50">
+              <AccordionTrigger className="text-left hover:no-underline py-6">
+                <span className="font-semibold">What's your pricing structure?</span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6 text-muted-foreground">
+                I offer both project-based and hourly pricing depending on your needs. Small optimizations start at $500, while complete custom themes range from $3,000-$8,000. I always provide a detailed quote upfront with no hidden fees—transparency is key to a successful partnership.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

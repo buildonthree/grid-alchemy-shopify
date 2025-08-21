@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 import beforeStore from "@/assets/before-store.jpg";
 import afterStore from "@/assets/after-store.jpg";
+import developerHeadshot from "@/assets/developer-headshot.jpg";
 
 const Index = () => {
   const scrollToServices = () => {
@@ -109,6 +110,177 @@ const Index = () => {
         >
           <ArrowDown className="w-6 h-6" />
         </button>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left side - Photo and Personal Touch */}
+            <div className="space-y-8">
+              <div className="relative w-80 h-80 mx-auto lg:mx-0">
+                <div className="w-full h-full rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src={developerHeadshot} 
+                    alt="Jacob - Shopify Expert & E-commerce Developer"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-primary to-primary-glow rounded-full opacity-20 blur-xl" />
+                <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-gradient-to-br from-accent to-primary rounded-full opacity-15 blur-xl" />
+              </div>
+              
+              {/* Certifications & Credentials */}
+              <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border/20">
+                <h3 className="text-lg font-semibold mb-4 gradient-text">Certifications & Expertise</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                      <CheckCircle className="w-3 h-3 mr-1" />
+                      Shopify Expert Certified
+                    </Badge>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                      <CheckCircle className="w-3 h-3 mr-1" />
+                      Google Analytics Certified
+                    </Badge>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                      <CheckCircle className="w-3 h-3 mr-1" />
+                      Conversion Rate Optimization
+                    </Badge>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20">
+                      <CheckCircle className="w-3 h-3 mr-1" />
+                      Web Performance Specialist
+                    </Badge>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side - Story and Experience */}
+            <div className="space-y-8">
+              <div>
+                <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
+                  <Users className="w-4 h-4 mr-2" />
+                  About Jacob
+                </Badge>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  The Person Behind <span className="gradient-text">Grid Alchemy</span>
+                </h2>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Hi, I'm Jacob! I started my journey in e-commerce back in 2018 when I helped my first client 
+                    increase their store's conversion rate by 240% in just 3 months. That moment changed everything 
+                    for me — I realized the incredible impact that thoughtful design and strategic optimization 
+                    could have on real businesses.
+                  </p>
+                  <p>
+                    Since then, I've worked with over 50 Shopify stores, from bootstrapped startups to 7-figure 
+                    brands. What I've learned is that success isn't about following the latest trends — it's 
+                    about understanding your customers and creating experiences that genuinely serve them.
+                  </p>
+                  <p>
+                    I believe in keeping things simple, clean, and intentional. No fluff, no unnecessary complexity. 
+                    Just results-driven solutions that help your business grow.
+                  </p>
+                </div>
+              </div>
+
+              {/* Experience Highlights */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="bento-card">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Target className="w-5 h-5 text-primary" />
+                      </div>
+                      <h3 className="font-semibold">5+ Years</h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Dedicated to Shopify development and e-commerce optimization
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bento-card">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Zap className="w-5 h-5 text-primary" />
+                      </div>
+                      <h3 className="font-semibold">180% Average</h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Conversion rate improvement across client stores
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bento-card">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Award className="w-5 h-5 text-primary" />
+                      </div>
+                      <h3 className="font-semibold">50+ Stores</h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Successfully optimized and launched
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bento-card">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <Clock className="w-5 h-5 text-primary" />
+                      </div>
+                      <h3 className="font-semibold">24/7 Support</h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Ongoing maintenance and optimization support
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* What Makes Me Different */}
+              <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-6 border border-border/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center">
+                    <Shield className="w-5 h-5 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-lg font-semibold">What Makes Me Different</h3>
+                </div>
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>No Agency Overhead:</strong> You work directly with me — faster decisions, personalized attention</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Data-Driven Approach:</strong> Every decision is backed by analytics and user behavior insights</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Long-term Partnership:</strong> I'm here for the journey, not just the project</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span><strong>Transparent Communication:</strong> Regular updates, clear timelines, honest feedback</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Trust Indicators Section */}

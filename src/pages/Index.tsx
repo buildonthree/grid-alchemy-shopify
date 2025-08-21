@@ -1,3 +1,4 @@
+import { Navigation } from "@/components/Navigation";
 import { BentoGrid } from "@/components/BentoGrid";
 import { ModernSlideshow } from "@/components/ModernSlideshow";
 import { SignupForm } from "@/components/SignupForm";
@@ -10,7 +11,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ShoppingBag, Star, ArrowDown, Facebook, CheckCircle, Users, Target, Zap, Award, Clock, Shield } from "lucide-react";
 import { MailchimpIcon, KlaviyoIcon, GoogleIcon, SpotifyIcon, YouTubeIcon, AppleIcon, MicrosoftIcon, FacebookIcon } from "@/components/custom-icons";
 import { Link } from "react-router-dom";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import heroBackground from "@/assets/hero-background.jpg";
 import beforeStore from "@/assets/before-store.jpg";
 import afterStore from "@/assets/after-store.jpg";
@@ -21,19 +21,16 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background snap-y snap-mandatory overflow-y-scroll">
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden snap-start">
+      <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{ backgroundImage: `url(${heroBackground})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/80" />
-        
-        {/* Theme Toggle */}
-        <div className="absolute top-6 right-6 z-20">
-          <ThemeToggle />
-        </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

@@ -11,7 +11,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ShoppingBag, Star, ArrowDown, Facebook, CheckCircle, Users, Target, Zap, Award, Clock, Shield } from "lucide-react";
 import { MailchimpIcon, KlaviyoIcon, GoogleIcon, SpotifyIcon, YouTubeIcon, AppleIcon, MicrosoftIcon, FacebookIcon } from "@/components/custom-icons";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroWorkspaceBg from "@/assets/hero-workspace-bg.jpg";
 import beforeStore from "@/assets/before-store.jpg";
 import afterStore from "@/assets/after-store.jpg";
 import developerHeadshot from "@/assets/developer-headshot.jpg";
@@ -29,15 +29,15 @@ const Index = () => {
       <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-30"
-          style={{ backgroundImage: `url(${heroBackground})` }}
+          style={{ backgroundImage: `url(${heroWorkspaceBg})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/90" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <div className="flex justify-center">
-            {/* Content */}
-            <div className="space-y-8 text-center max-w-4xl">
-              <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 px-4 py-2 w-fit mx-auto">
+          <div className="flex justify-start">
+            {/* Content - Left aligned on desktop */}
+            <div className="space-y-8 text-left max-w-4xl">
+              <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 px-4 py-2 w-fit">
                 <ShoppingBag className="w-4 h-4 mr-2" />
                 Shopify Expert Services
               </Badge>
@@ -47,12 +47,12 @@ const Index = () => {
                 <span className="gradient-text">Designed to Perform</span>{" "}
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
               Hi, I'm Jacob — I help Shopify stores load 3x faster and convert 2x better, without the agency overhead.
               No endless meetings, no creative fluff, no surprise costs. Just clean code, smart strategy, and results that show up in your revenue.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
                   className="bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 transition-opacity px-8 py-4 text-lg"
@@ -70,7 +70,7 @@ const Index = () => {
                 </Button>
               </div>
               
-              <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground">
+              <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (

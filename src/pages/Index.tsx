@@ -266,46 +266,88 @@ const Index = () => {
       </section>
 
       {/* Trust Indicators Section */}
-      <section className="py-20 px-6 bg-muted/30">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Trusted by <span className="gradient-text">Forward-Thinking</span> Brands
-          </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Join 50+ Shopify store owners who've transformed their online presence and doubled their conversions
-          </p>
-          
-          <div className="grid md:grid-cols-4 gap-8 mb-16">
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/20 text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
-              <div className="text-muted-foreground">Stores Optimized</div>
+      <section className="py-20 px-6 bg-gradient-to-br from-background via-muted/20 to-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Trusted by <span className="gradient-text">Forward-Thinking</span> Brands
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              Join 50+ Shopify store owners who've transformed their online presence and doubled their conversions
+            </p>
+          </div>
+
+          {/* Stats Grid - More Visual */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <div className="group bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl p-8 border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-105 text-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center">
+                <Users className="w-8 h-8 text-primary" />
+              </div>
+              <div className="text-4xl font-bold gradient-text mb-2">50+</div>
+              <div className="text-muted-foreground font-medium">Stores Optimized</div>
+              <div className="text-xs text-muted-foreground/70 mt-1">Across all industries</div>
             </div>
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/20 text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">180%</div>
-              <div className="text-muted-foreground">Avg. Conversion Increase</div>
+
+            <div className="group bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl p-8 border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-105 text-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center">
+                <Target className="w-8 h-8 text-primary" />
+              </div>
+              <div className="text-4xl font-bold gradient-text mb-2">180%</div>
+              <div className="text-muted-foreground font-medium">Avg. Conversion Boost</div>
+              <div className="text-xs text-muted-foreground/70 mt-1">Within 90 days</div>
             </div>
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/20 text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">3x</div>
-              <div className="text-muted-foreground">Faster Loading</div>
+
+            <div className="group bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl p-8 border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-105 text-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center">
+                <Zap className="w-8 h-8 text-primary" />
+              </div>
+              <div className="text-4xl font-bold gradient-text mb-2">3x</div>
+              <div className="text-muted-foreground font-medium">Faster Loading</div>
+              <div className="text-xs text-muted-foreground/70 mt-1">Page speed optimization</div>
             </div>
-            <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 border border-border/20 text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">5.0</div>
-              <div className="text-muted-foreground">Client Rating</div>
+
+            <div className="group bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm rounded-3xl p-8 border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-105 text-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center">
+                <Star className="w-8 h-8 text-primary fill-primary" />
+              </div>
+              <div className="text-4xl font-bold gradient-text mb-2">5.0</div>
+              <div className="text-muted-foreground font-medium">Client Rating</div>
+              <div className="text-xs text-muted-foreground/70 mt-1">100% satisfaction</div>
             </div>
           </div>
-          
-          {/* Integration Partners */}
-          <div className="space-y-8">
-            <h3 className="text-xl font-semibold text-muted-foreground">Seamless Integration With Your Favorite Tools</h3>
-            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-              <MailchimpIcon className="w-8 h-8" />
-              <KlaviyoIcon className="w-8 h-8" />
-              <GoogleIcon className="w-8 h-8" />
-              <FacebookIcon className="w-8 h-8" />
-              <SpotifyIcon className="w-8 h-8" />
-              <YouTubeIcon className="w-8 h-8" />
-              <AppleIcon className="w-8 h-8" />
-              <MicrosoftIcon className="w-8 h-8" />
+
+          {/* Integration Partners - Improved Layout */}
+          <div className="bg-gradient-to-br from-card/30 to-card/10 rounded-3xl p-8 border border-border/20">
+            <div className="text-center mb-8">
+              <h3 className="text-xl font-semibold mb-2">Seamless Integration With Your Favorite Tools</h3>
+              <p className="text-muted-foreground text-sm">Connect with the platforms you already love</p>
+            </div>
+            
+            <div className="grid grid-cols-4 md:grid-cols-8 gap-6 items-center justify-items-center opacity-70 hover:opacity-90 transition-opacity">
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <MailchimpIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <KlaviyoIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <GoogleIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <FacebookIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <SpotifyIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <YouTubeIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <AppleIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
+              <div className="group p-3 rounded-xl hover:bg-background/50 transition-colors">
+                <MicrosoftIcon className="w-8 h-8 group-hover:scale-110 transition-transform" />
+              </div>
             </div>
           </div>
         </div>

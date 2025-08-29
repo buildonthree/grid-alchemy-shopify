@@ -1,7 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
 
 interface ServiceModalProps {
   isOpen: boolean;
@@ -21,12 +20,7 @@ export const ServiceModal = ({ isOpen, onClose, service }: ServiceModalProps) =>
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl glass-effect border-border/20">
         <DialogHeader className="space-y-4">
-          <div className="flex items-center justify-between">
-            <DialogTitle className="text-2xl gradient-text">{service.title}</DialogTitle>
-            <Button variant="ghost" size="sm" onClick={onClose}>
-              <X className="h-4 w-4" />
-            </Button>
-          </div>
+          <DialogTitle className="text-2xl gradient-text">{service.title}</DialogTitle>
           <p className="text-muted-foreground text-lg">{service.description}</p>
         </DialogHeader>
         

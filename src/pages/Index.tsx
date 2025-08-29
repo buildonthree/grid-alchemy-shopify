@@ -28,16 +28,16 @@ const Index = () => {
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center overflow-hidden pt-20">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-10"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: `url(${heroBackground})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/90" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Content */}
-            <div className="space-y-8">
-              <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 px-4 py-2 w-fit">
+          <div className="flex justify-center">
+            {/* Content */}
+            <div className="space-y-8 text-center max-w-4xl">
+              <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 px-4 py-2 w-fit mx-auto">
                 <ShoppingBag className="w-4 h-4 mr-2" />
                 Shopify Expert Services
               </Badge>
@@ -47,12 +47,12 @@ const Index = () => {
                 <span className="gradient-text">Designed to Perform</span>{" "}
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Hi, I'm Jacob — I help Shopify stores load 3x faster and convert 2x better, without the agency overhead.
               No endless meetings, no creative fluff, no surprise costs. Just clean code, smart strategy, and results that show up in your revenue.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   size="lg" 
                   className="bg-gradient-to-r from-primary to-primary-glow hover:opacity-90 transition-opacity px-8 py-4 text-lg"
@@ -70,7 +70,7 @@ const Index = () => {
                 </Button>
               </div>
               
-              <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
+              <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
@@ -84,22 +84,6 @@ const Index = () => {
                 <div className="h-4 w-px bg-border hidden sm:block" />
                 <div className="text-sm">180% Avg. Conversion Increase</div>
               </div>
-            </div>
-
-            {/* Right side - Image */}
-            <div className="relative">
-              <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src={heroBackground} 
-                  alt="Shopify store optimization example"
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-              </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary to-primary-glow rounded-full opacity-20 blur-xl" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-accent to-primary rounded-full opacity-15 blur-2xl" />
             </div>
           </div>
         </div>

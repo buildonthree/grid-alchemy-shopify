@@ -33,9 +33,9 @@ export const Navigation = () => {
             onClick={() => scrollToSection("hero")}
           >
             <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary-glow rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground text-sm font-bold">GA</span>
+              <span className="text-primary-foreground text-sm font-bold">JF</span>
             </div>
-            <span className="text-xl font-bold gradient-text">Grid Alchemy</span>
+            <span className="text-xl font-bold gradient-text">The Works by Jay</span>
           </div>
 
           {/* Desktop Menu */}

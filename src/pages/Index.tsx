@@ -70,19 +70,38 @@ const Index = () => {
                 </Button>
               </div>
               
-              <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
-                    ))}
+              {/* Enhanced Stats Banner */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+                <div className="group bg-card/40 backdrop-blur-sm rounded-2xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="flex">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                      ))}
+                    </div>
                   </div>
-                  <span className="text-sm">5.0 Rating</span>
+                  <div className="text-2xl font-bold gradient-text">5.0</div>
+                  <div className="text-sm text-muted-foreground font-medium">Client Rating</div>
+                  <div className="text-xs text-muted-foreground/70">100% satisfaction</div>
                 </div>
-                <div className="h-4 w-px bg-border hidden sm:block" />
-                <div className="text-sm">50+ Stores Optimized</div>
-                <div className="h-4 w-px bg-border hidden sm:block" />
-                <div className="text-sm">180% Avg. Conversion Increase</div>
+                
+                <div className="group bg-card/40 backdrop-blur-sm rounded-2xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Users className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="text-2xl font-bold gradient-text">50+</div>
+                  <div className="text-sm text-muted-foreground font-medium">Stores Optimized</div>
+                  <div className="text-xs text-muted-foreground/70">Across all industries</div>
+                </div>
+                
+                <div className="group bg-card/40 backdrop-blur-sm rounded-2xl p-6 border border-border/20 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Target className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="text-2xl font-bold gradient-text">180%</div>
+                  <div className="text-sm text-muted-foreground font-medium">Avg. Conversion Boost</div>
+                  <div className="text-xs text-muted-foreground/70">Within 90 days</div>
+                </div>
               </div>
             </div>
           </div>

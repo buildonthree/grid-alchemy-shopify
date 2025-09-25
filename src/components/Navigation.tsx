@@ -20,6 +20,7 @@ export const Navigation = () => {
     { label: "Services", action: () => scrollToSection("services") },
     { label: "About", action: () => scrollToSection("about") },
     { label: "Success Stories", href: "/success-stories" },
+    { label: "Get Proposal", href: "/proposals" },
     { label: "Contact", action: () => scrollToSection("contact") },
   ];
 

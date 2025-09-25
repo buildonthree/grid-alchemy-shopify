@@ -32,7 +32,7 @@ const NightAndDayProposal = () => {
 
               {/* Services Grid */}
               <div className="grid lg:grid-cols-2 gap-8 mb-12">
-                <div className="bg-gradient-to-br from-card/80 to-card/40 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
+                <div className="bg-muted/30 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Facebook Ads for Night & Day&apos;s Target Audience</h3>
                   <div className="text-muted-foreground mb-6 space-y-2">
                     <div className="flex items-start gap-2">
@@ -61,7 +61,7 @@ const NightAndDayProposal = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-card/80 to-card/40 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
+                <div className="bg-muted/30 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Ongoing Campaign Management</h3>
                   <div className="text-muted-foreground mb-6 space-y-2">
                     <div className="flex items-start gap-2">
@@ -86,7 +86,7 @@ const NightAndDayProposal = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-card/80 to-card/40 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
+                <div className="bg-muted/30 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Content to Showcase Night & Day&apos;s Expertise</h3>
                   <div className="text-muted-foreground mb-6 space-y-2">
                     <div className="flex items-start gap-2">
@@ -95,11 +95,11 @@ const NightAndDayProposal = () => {
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="text-primary">•</span>
-                      <span>Content that builds trust with expecting mothers</span>
+                      <span>Professional visuals highlighting your services</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="text-primary">•</span>
-                      <span>Professional visuals highlighting your services</span>
+                      <span>Content that builds trust with expecting mothers</span>
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="text-primary">•</span>
@@ -111,7 +111,7 @@ const NightAndDayProposal = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-card/80 to-card/40 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
+                <div className="bg-muted/30 border border-border/20 rounded-2xl p-8 hover:border-primary/30 transition-all duration-300 hover:scale-[1.02]">
                   <h3 className="text-xl font-semibold mb-4 text-foreground">Shopify Store for Night & Day Products</h3>
                   <div className="text-muted-foreground mb-6 space-y-2">
                     <div className="flex items-start gap-2">

@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Index from "./pages/Index";
 import SuccessStories from "./pages/SuccessStories";
 import Proposals from "./pages/Proposals";
+import NightAndDayProposal from "./pages/NightAndDayProposal";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,7 +22,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/success-stories" element={<SuccessStories />} />
-            <Route path="/proposals" element={<Proposals />} />
+            <Route path="/proposals/nightandday" element={<NightAndDayProposal />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

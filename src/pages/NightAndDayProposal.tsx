@@ -137,18 +137,18 @@ const NightAndDayProposal = () => {
 
               {/* Total Pricing */}
               <div className="grid md:grid-cols-2 gap-6 mb-12">
-                <div className="bg-gradient-to-br from-primary to-primary-glow text-primary-foreground rounded-2xl p-8 text-center">
-                  <h3 className="text-xl font-semibold mb-4">Marketing Package</h3>
-                  <div className="text-4xl font-bold mb-4">$3,100</div>
-                  <p className="mb-2"><strong>Setup:</strong> $850 • <strong>Monthly:</strong> $750 x 3</p>
-                  <p className="text-sm opacity-80">Ads Setup + Content + 3 months management</p>
+                <div className="bg-muted/30 border border-border/20 rounded-2xl p-8 text-center">
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Marketing Package</h3>
+                  <div className="text-4xl font-bold mb-4 gradient-text">$3,100</div>
+                  <p className="mb-2 text-foreground"><strong>Setup:</strong> $850 • <strong>Monthly:</strong> $750 x 3</p>
+                  <p className="text-sm text-muted-foreground">Ads Setup + Content + 3 months management</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-primary to-primary-glow text-primary-foreground rounded-2xl p-8 text-center">
-                  <h3 className="text-xl font-semibold mb-4">Website Build</h3>
-                  <div className="text-4xl font-bold mb-4">$2,000</div>
-                  <p className="mb-2"><strong>One-time:</strong> Shopify dropshipping store</p>
-                  <p className="text-sm opacity-80">Complete store setup + vendor sourcing</p>
+                <div className="bg-muted/30 border border-border/20 rounded-2xl p-8 text-center">
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Website Build</h3>
+                  <div className="text-4xl font-bold mb-4 gradient-text">$2,000</div>
+                  <p className="mb-2 text-foreground"><strong>One-time:</strong> Shopify dropshipping store</p>
+                  <p className="text-sm text-muted-foreground">Complete store setup + vendor sourcing</p>
                 </div>
               </div>
 

@@ -628,6 +628,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Proposals Section */}
+      <section id="proposals" className="py-20 px-6 bg-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Get Your <span className="gradient-text">Custom Proposal</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Answer a few questions about your store and get a detailed, personalized optimization proposal with timeline and pricing
+            </p>
+          </div>
+          <div className="bg-card/50 backdrop-blur-sm rounded-3xl border border-border/20 overflow-hidden shadow-2xl">
+            <iframe 
+              src="https://claude.site/public/artifacts/ca78502a-7b15-46c4-88ff-e4f2911edeb4/embed" 
+              title="Custom Proposal Generator" 
+              width="100%" 
+              height="600" 
+              frameBorder="0" 
+              allow="clipboard-write" 
+              allowFullScreen
+              className="w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-gradient-to-br from-primary/5 to-accent/5">
         <div className="max-w-4xl mx-auto">
